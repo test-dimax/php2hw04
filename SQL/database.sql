@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 31 2020 г., 15:11
+-- Время создания: Авг 01 2020 г., 12:06
 -- Версия сервера: 5.7.25-log
 -- Версия PHP: 7.1.32
 
@@ -80,10 +80,9 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `contents`, `author_id`) VALUES
-(1, 'Первая новость исправлена', 'Текст первой новости', 1),
 (2, 'Вторая новость', 'Текст второй новости', 3),
 (3, 'Новая статья', 'Текст новой статьи', 4),
-(17, 'Новая новость из админки', 'Текст новой новости', 2);
+(18, 'Новая новость из админки', 'Текст новой новости', 1);
 
 --
 -- Индексы сохранённых таблиц
@@ -130,7 +129,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
